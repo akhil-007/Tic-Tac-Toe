@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.akhi.project.MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/one"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/two"
+        android:layout_toLeftOf="@id/one"
+        android:layout_alignTop="@id/one"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/three"
+        android:layout_toLeftOf="@id/two"
+        android:layout_alignTop="@id/two"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"
+        android:padding="0dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/four"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/one"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/five"
+        android:layout_toLeftOf="@id/four"
+        android:layout_alignTop="@id/four"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/six"
+        android:layout_toLeftOf="@id/five"
+        android:layout_alignTop="@id/five"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/seven"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/four"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/eight"
+        android:layout_toLeftOf="@id/seven"
+        android:layout_alignTop="@id/seven"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/nine"
+        android:layout_toLeftOf="@id/eight"
+        android:layout_alignTop="@id/eight"
+        android:layout_marginLeft="5dp"
+        android:text=" "
+        android:textSize="70sp"/>
+
+    <TextView
+        android:id="@+id/dialogue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nine"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Click a buton to start" />
+    <TextView
+        android:id="@+id/dialogue2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogue"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="PLAYER VS COMPUTER"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>
